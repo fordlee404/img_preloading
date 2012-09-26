@@ -3,9 +3,33 @@
 <head>
 <meta charset="utf-8"/>
 <title>Image Preloading Demo</title>
+<style type="text/css">
+#img_show_tag { display: block; margin: 0 auto; border: 1px solid #000000; }
+</style>
 </head>
 
 <body>
-    <p>This is a image preloading demo!</p>
+    <h1>This is a image preloading demo!</h1>
+    <section id="img_radio">
+        <input type="radio" name="img" value="images/demo1.jpg"/>Image1
+        <input type="radio" name="img" value="images/demo2.jpg"/>Image2
+        <input type="radio" name="img" value="images/demo3.jpg"/>Image3
+        <input type="radio" name="img" value="images/demo4.jpg"/>Image4
+        <input type="radio" name="img" value="images/demo5.jpg"/>Image5
+        <input type="radio" name="img" value="images/demo6.jpg"/>Image6
+        <input type="radio" name="img" value="images/demo7.jpg"/>Image7
+        <input type="radio" name="img" value="images/demo8.jpg"/>Image8
+        <input type="radio" name="img" value="images/demo9.jpg"/>Image9
+        <input type="radio" name="img" value="images/demo10.jpg"/>Image10
+        <input type="radio" name="img" value="images/demo11.jpg"/>Image11
+        <input type="radio" name="img" value="images/demo12.gif"/>Image12
+        <input type="radio" name="img" value="images/demo13.ico"/>Image13
+    </section>
+    <section id="image_show_sec">
+        <img id="img_show_tag" src="" alt="" />
+    </section>
 </body>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/img_preloading.js"></script>
+<script type="text/javascript" src="js/demo.js"></script>
 </html>
