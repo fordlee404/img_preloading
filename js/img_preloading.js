@@ -7,9 +7,10 @@
 
 var imgPreloading;
 
-imgPreloading = function(srcStr, callback){
+imgPreloading = function(srcStr, callback, errorCallback){
     var img = new Image();
 
+    img.onerror = errorCallback;
     img.src = srcStr;
     if(img.complete||img.readyState==='complete'){ // if cache
         img.onload = null;
@@ -24,4 +25,4 @@ imgPreloading = function(srcStr, callback){
 
 // 更新：
 // 2012/09/25：1.code常用图片预加载方法
-// 2012/09/26: 1.修复IE6，IE8下图片随机可能不加载bug; 2.优化代码顺序
+// 2012/09/26: 1.修复IE6，IE8下图片随机可能不加载bug; 2.优化代码顺序; 3.添加onerror callback();
