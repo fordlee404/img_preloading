@@ -7,9 +7,9 @@ $(function(){
         img.src = '';
         _val = this.value;
 
-        imgPreloading(_val, function(w, h){
-            img.width = w;
-            img.height = h;
+        imgPreloading(_val, function(_img){
+            img.width = _img.width;
+            img.height = _img.height;
             _src = _val;
             //_src = [_val, '?', 'rnd=', (new Date).getTime()].join('');
             img.src = _src;
