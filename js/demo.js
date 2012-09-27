@@ -11,8 +11,9 @@ $(function(){
             img.width = _img.width;
             img.height = _img.height;
             _src = _val;
-            //_src = [_val, '?', 'rnd=', (new Date).getTime()].join('');
-            img.src = _src;
+            setTimeout(function(){
+                img.src = _src;
+            }, 1000);
         });
     });
 });

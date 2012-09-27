@@ -3,10 +3,17 @@
  * @author fordlee404@gmail.com
  * @create 2012/09/25
  * @modify 2012/09/26
+ * @example imgPreloading('../images/demo1.jpg', function(img){// Do Something;}, function(){// Do Something;});
  */
 
 var imgPreloading;
 
+/*
+ * @param srcStr {string} 图片路径
+ * @param callback {function} 获得图片信息成功后的回调函数
+ * @param [errorCallback] {function} 可选,获得图片信息失败后的回调函数
+ * @return {object} 返回值为Image对象
+ */
 imgPreloading = function(srcStr, callback, errorCallback){
     var img = new Image(),
         _intervalTimer,
