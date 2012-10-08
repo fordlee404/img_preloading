@@ -1,6 +1,7 @@
-$(function(){
+define(function(require, exports, module){
     var $imgRadio = $('input[name="img"]'),
         img = document.getElementById('img_show_tag'),
+        imgPreloading = require('img_preloading'),
         _val, _src;
 
     $imgRadio.bind('click', function(){
