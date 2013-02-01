@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Image Preloading Demo</title>
+<style type="text/css">
+#img_show_tag { display: block; margin: 0 auto; border: 1px solid #000000; }
+</style>
+</head>
+
+<body>
+    <h1>This is a image preloading demo!</h1>
+    <section id="img_radio">
+        <input id="img1" type="radio" name="img" value="images/demo1.jpg"/><label for="img1">Image1</label>
+        <input id="img2" type="radio" name="img" value="images/demo9.jpg"/><label for="img2">Image2</label>
+        <input id="img3" type="radio" name="img" value="images/demo10.jpg"/><label for="img3">Image3</label>
+        <input id="img4" type="radio" name="img" value="images/demo11.jpg"/><label for="img4">Image4</label>
+        <input id="img5" type="radio" name="img" value="images/demo12.gif"/><label for="img5">Image5</label>
+        <input id="img6" type="radio" name="img" value="images/demo13.ico"/><label for="img6">Image6</label>
+    </section>
+    <section id="image_show_sec">
+        <img id="img_show_tag" src="" alt="" />
+    </section>
+</body>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script type="text/javascript" src="../src/img_preloading.js"></script>
+<script type="text/javascript" src="js/demo.js"></script>
+</html>
